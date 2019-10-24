@@ -11,6 +11,13 @@ import {
   CardContent,
   Typography
 } from "@material-ui/core";
+import { makeStyles } from "@material-ui/styles";
+
+const useStyles = makeStyles({
+  media: {
+    height: 200
+  }
+});
 
 function ArticleCard(props) {
   return (
@@ -37,10 +44,10 @@ function ArticleCard(props) {
         <IconButton>
           <Icon>share</Icon>
         </IconButton>
+        <Button variant="contained" color="primary">
+          Read more
+        </Button>
       </CardActions>
-      <Button variant="contained" color="primary">
-        Read more
-      </Button>
     </Card>
   );
 }
