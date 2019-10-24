@@ -1,10 +1,18 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
-import Card from "./Card";
+import ArticleCard from "./ArticleCard";
+import { CssBaseline, Container } from "@material-ui/core";
 
 function App() {
-  return <Card />;
+  return (
+    <div className="App">
+      <CssBaseline>
+        <Container>
+          <ArticleCard></ArticleCard>
+        </Container>
+      </CssBaseline>
+    </div>
+  );
 }
 
 export default App;
