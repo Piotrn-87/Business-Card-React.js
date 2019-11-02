@@ -53,11 +53,11 @@ function ArticleCard(props) {
       ></CardMedia>
       <CardContent>
         <Typography className={classes.button} variant="h6">
-          Początkujący programista z wielkim zapałem do pracy i jeszcze większą
-          checią poznawania nowych technologii. Jada zbyt kalorycznie, często
-          podejmuje zle decyzje, zdarza mu się nie mówić ładnie. Nie lubi
-          poranków i nie oglada Netflixa. Uwielbia bliski kontakt z naturą oraz
-          zapach kawy o poranku
+          Highly motivated self-taught Front End Developer who has started their
+          journey without Computer Science Degree. Strongly focused on creating
+          a good and clean code which is easy to read and maintain. Knowledge in
+          JavaScript & React.js & HTML & CSS & GIT Always ready for new
+          challenges and learn things in more deeper way.
         </Typography>
       </CardContent>
       <CardActions>
