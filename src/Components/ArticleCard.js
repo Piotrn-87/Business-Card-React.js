@@ -18,23 +18,20 @@ const useStyles = makeStyles({
     height: 200,
     padding: 20,
     "&:hover": {
-      height: 400,
+      height: 250,
       transition: "1s"
     }
   },
   button: {
-    background: "red",
     padding: 20,
     color: "green",
     "&:hover": {
       background: "yellow",
       transition: "1s"
-    },
-    img: {
-      "&:hover": {
-        height: 400
-      }
     }
+  },
+  header: {
+    height: 100
   }
 });
 
@@ -43,13 +40,15 @@ function ArticleCard(props) {
   return (
     <Card>
       <CardHeader
+        className={classes.header}
         avatar={<Avatar>PN</Avatar>}
         title="Piotr Napieralski"
         subheader="2019-10-22"
+        image="https://picsum.photos/id/0/561/374"
       ></CardHeader>
       <CardMedia
         className={classes.media}
-        image="http://picsum.photos/id/1015/600/400"
+        image="https://picsum.photos/id/0/561/374"
       ></CardMedia>
       <CardContent>
         <Typography className={classes.button} variant="h6">

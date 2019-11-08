@@ -1,16 +1,11 @@
 import React from "react";
 import "./App.css";
-import ArticleCard from "./ArticleCard";
-import { CssBaseline, Container } from "@material-ui/core";
+import NavBar from "./Components/Nav";
 
 function App() {
   return (
     <div className="App">
-      <CssBaseline>
-        <Container>
-          <ArticleCard></ArticleCard>
-        </Container>
-      </CssBaseline>
+      <NavBar />
     </div>
   );
 }
