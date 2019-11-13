@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import NavBar from "./Components/NavBar";
+import Search from "./Components/Search";
 import { MuiThemeProvider } from "material-ui/styles";
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <MuiThemeProvider>
       <div className="App">
         <NavBar />
+        <Search />
       </div>
     </MuiThemeProvider>
   );
