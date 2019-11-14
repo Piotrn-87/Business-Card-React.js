@@ -3,13 +3,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 # Quick Start
 
 * Install dependencies
-npm install
+- npm install
 
 * Serve on localhost:3000
-npm start
+- npm start
 
 * Build for production
-npm run build
+- npm run build
 
 * Version
-1.0.0
+- 1.0.0
