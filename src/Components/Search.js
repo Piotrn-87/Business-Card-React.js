@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import ImageReslut from "./ImageResult";
 import TextField from "material-ui/TextField";
 import SelectField from "material-ui/SelectField";
 import MenuItem from "material-ui/MenuItem";
@@ -74,6 +75,9 @@ class Search extends Component {
           <MenuItem value={25} primaryText="25"></MenuItem>
         </SelectField>
         <br />
+        {this.state.repository.length > 0 ? (
+          <ImageReslut images={this.state.repository} />
+        ) : null}
         <div>{listRepository}</div>{" "}
       </div>
     );
