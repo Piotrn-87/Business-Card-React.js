@@ -38,21 +38,21 @@ class Search extends Component {
   };
 
   render() {
-    const { repository } = this.state;
-    const listRepository = repository.length ? (
-      repository.map(repo => {
-        return (
-          <div key={repo.id}>
-            <div>
-              <span>{repo.name}</span>
-              <p>{repo.full_name}</p>
-            </div>
-          </div>
-        );
-      })
-    ) : (
-      <div>No repo left</div>
-    );
+    // const { repository } = this.state;
+    // const listRepository = repository.length ? (
+    //   repository.map(repo => {
+    //     return (
+    //       <div key={repo.id}>
+    //         <div>
+    //           <span>{repo.name}</span>
+    //           <p>{repo.full_name}</p>
+    //         </div>
+    //       </div>
+    //     );
+    //   })
+    // ) : (
+    //   <div>No repo left</div>
+    // );
     return (
       <div>
         <TextField
@@ -66,6 +66,7 @@ class Search extends Component {
         <SelectField
           name="amount"
           floatingLabelText="Amount"
+          value={this.state.amount}
           onChange={this.onAmountChange}
         >
           <MenuItem value={5} primaryText="5"></MenuItem>
@@ -76,9 +77,8 @@ class Search extends Component {
         </SelectField>
         <br />
         {this.state.repository.length > 0 ? (
-          <ImageReslut images={this.state.repository} />
+          <ImageReslut repository={this.state.repository} />
         ) : null}
-        <div>{listRepository}</div>{" "}
       </div>
     );
   }
