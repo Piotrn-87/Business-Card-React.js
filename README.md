@@ -13,6 +13,6 @@ npm start
 npm run build
 ```
 
-### Versionn
+### Version
 
 1.0.0
