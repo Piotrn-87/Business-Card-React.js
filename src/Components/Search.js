@@ -9,7 +9,7 @@ class Search extends Component {
   state = {
     amount: "",
     searchText: "",
-    url: "https://api.github.com/users/piotrn-87/repos",
+    url: "https://api.github.com/users",
     repository: []
   };
 
@@ -20,13 +20,13 @@ class Search extends Component {
         this.setState({ repository: [] });
       } else {
         axios
-          .get(`${this.state.url}`)
+          .get(`${this.state.url}/${value}/repos?sort=updated&direction=desc`)
           .then(response => {
             this.setState({
               repository: response.data.slice(0, 4)
             });
           })
-          .catch(err => console.log(err));
+          .catch(err => console.log("cant find github API"));
       }
     });
   };
@@ -38,21 +38,6 @@ class Search extends Component {
   };
 
   render() {
-    // const { repository } = this.state;
-    // const listRepository = repository.length ? (
-    //   repository.map(repo => {
-    //     return (
-    //       <div key={repo.id}>
-    //         <div>
-    //           <span>{repo.name}</span>
-    //           <p>{repo.full_name}</p>
-    //         </div>
-    //       </div>
-    //     );
-    //   })
-    // ) : (
-    //   <div>No repo left</div>
-    // );
     return (
       <div>
         <TextField
