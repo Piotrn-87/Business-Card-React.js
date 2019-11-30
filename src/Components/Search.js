@@ -9,6 +9,7 @@ class Search extends Component {
   state = {
     amount: "",
     searchText: "",
+    loading: true,
     url: "https://api.github.com/users",
     repository: []
   };
@@ -23,7 +24,9 @@ class Search extends Component {
           .get(`${this.state.url}/${value}/repos?sort=updated&direction=desc`)
           .then(response => {
             this.setState({
-              repository: response.data.slice(0, 4)
+              // repository: response.data.slice(0, 4),
+              repository: response.data,
+              loading: false
             });
           })
           .catch(err => console.log("cant find github API"));
@@ -63,7 +66,9 @@ class Search extends Component {
         <br />
         {this.state.repository.length > 0 ? (
           <ImageReslut repository={this.state.repository} />
-        ) : null}
+        ) : (
+          <p>write user name</p>
+        )}
       </div>
     );
   }
