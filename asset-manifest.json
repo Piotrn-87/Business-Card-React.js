@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Business-Card-React.js/static/css/main.919bc91d.chunk.css",
-    "main.js": "/Business-Card-React.js/static/js/main.f69043ef.chunk.js",
-    "main.js.map": "/Business-Card-React.js/static/js/main.f69043ef.chunk.js.map",
+    "main.js": "/Business-Card-React.js/static/js/main.b8dd05e6.chunk.js",
+    "main.js.map": "/Business-Card-React.js/static/js/main.b8dd05e6.chunk.js.map",
     "runtime-main.js": "/Business-Card-React.js/static/js/runtime-main.3aee7266.js",
     "runtime-main.js.map": "/Business-Card-React.js/static/js/runtime-main.3aee7266.js.map",
     "static/js/2.2d143423.chunk.js": "/Business-Card-React.js/static/js/2.2d143423.chunk.js",
     "static/js/2.2d143423.chunk.js.map": "/Business-Card-React.js/static/js/2.2d143423.chunk.js.map",
     "index.html": "/Business-Card-React.js/index.html",
-    "precache-manifest.ddbfaaa54d2b25e3f3e461273c903ca8.js": "/Business-Card-React.js/precache-manifest.ddbfaaa54d2b25e3f3e461273c903ca8.js",
+    "precache-manifest.16e45c42b2401fd246ac255c57cbd9e7.js": "/Business-Card-React.js/precache-manifest.16e45c42b2401fd246ac255c57cbd9e7.js",
     "service-worker.js": "/Business-Card-React.js/service-worker.js",
     "static/css/main.919bc91d.chunk.css.map": "/Business-Card-React.js/static/css/main.919bc91d.chunk.css.map",
     "static/media/code.jpg": "/Business-Card-React.js/static/media/code.5f5e3d9a.jpg"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.3aee7266.js",
     "static/js/2.2d143423.chunk.js",
     "static/css/main.919bc91d.chunk.css",
-    "static/js/main.f69043ef.chunk.js"
+    "static/js/main.b8dd05e6.chunk.js"
   ]
 }
